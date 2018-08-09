@@ -6,11 +6,10 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="lib/bootstrap-validator/css/bootstrapValidator.css">
     <link rel="stylesheet" href="lib/nprogress/nprogress.css">
     <link rel="stylesheet" href="css/index.css">
-    
 </head>
 <body>
 <div class="lt-aside">
@@ -21,7 +20,7 @@
     </div>
     <div class="nav">
         <ul>
-            <li class="user-manage"><a href="user.html"><i class="glyphicon glyphicon-user"></i> 用户管理</a></li>
+            <li class="user-manage active"><a href="user.html"><i class="glyphicon glyphicon-user"></i> 用户管理</a></li>
             <li class="category"><a href="javascript:;"><i class="glyphicon glyphicon-list"></i> 分类管理</a>
                 <ul class="sub-category">
                     <li><a href="category_1.html">一级分类</a></li>
@@ -46,29 +45,14 @@
         </div>
     </div>
 </div>
-<div class="modal fade" tabindex="-1" >
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
-                <h4 class="modal-title">温馨提示</h4>
-            </div>
-            <div class="modal-body">
-                <p><i class="glyphicon glyphicon-info-sign"></i>您确定要退出后台管理系统吗？</p>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
-                <button type="button" class="btn btn-primary" id="logout">退出</button>
-            </div>
-        </div><!-- /.modal-content -->
-    </div><!-- /.modal-dialog -->
-</div><!-- /.modal -->
+
+
 
 <script src="lib/jquery/jquery.js"></script>
 <script src="lib/bootstrap/js/bootstrap.js"></script>
 <script src="lib/nprogress/nprogress.js"></script>
-<script src="js/index.js"></script>
 <script src="lib/bootstrap-validator/js/bootstrapValidator.js"> </script>
 <script src="js/common.js"></script>
+<script src="js/user.js"></script>
 </body>
 </html>

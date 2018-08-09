@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+//lvha
+a:link,a:visited,a:hover,a:active{
+  text-decoration: none;
+  color: #000;
+}
+
+.lt-aside {
+  position: fixed;
+  height: 100%;
+  width: 180px;
+  background-color: #222d32;
+  z-index: 10;
+  transition: 2s margin-left;
+  &.animate {
+    margin-left: -180px;
+  }
+  .brand {
+    height: 50px;
+    background-color: #367fa9;
+    text-align: center;
+    //opacity: 0.8;
+    a{
+      line-height: 50px;
+
+      color: #fff;
+      font-size: 24px;
+
+    }
+  }
+
+  .user {
+    padding-top: 30px;
+    img{
+      width: 80px;
+      display: block;
+      margin: 0 auto;
+      border-radius: 50%;
+    }
+    p{
+      color: #fff;
+      text-align: center;
+      padding-top: 10px;
+      font-size: 18px;
+    }
+  }
+
+  .nav {
+
+    &>ul{
+      text-align: center;
+      .active{
+        background-color: #1d1f21;
+        border-left: 2px solid #006699;
+        //margin-top: 20px;
+      }
+      &>li{
+        border-left: 2px solid transparent;
+        //padding-left: 50px;
+        margin: 10px 0;
+        line-height: 50px;
+        &>a{
+          color: white;
+        }
+        &>ul>li{
+          //width: 100%;
+          //margin-left: 20px;
+          padding: 5px 0 5px 20px;
+
+          a{
+            color: #fff;
+          }
+        }
+      }
+    }
+    a{
+      text-align: center;
+    }
+  }
+}
+
+.lt-main {
+  .lt-top-bar {
+    transition: 2s padding-left;
+    &.animate{
+      padding-left: 0px;
+    }
+
+    width: 100%;
+    height: 50px;
+    background-color: #3c8dbc;
+    position: fixed;
+    padding-left: 180px;
+    font-size: 16px;
+    padding-top: 14px;
+
+    .menu {
+      color: #fff;
+      padding-left: 15px;
+    }
+    .logout{
+      color: #fff;
+      padding-right: 15px;
+    }
+
+  }
+
+  .lt-content{
+    padding-top: 50px;
+    margin-left: 180px;
+    transition: margin-left 2s;
+
+    &.animate {
+      margin-left: 0;
+    }
+    //border: 1px solid #000;
+
+    .container-fluid {
+      margin-top: 15px;
+
+      .manage a{
+        color: #337ab7 ;
+      }
+
+      .manage a:hover {
+        color: #ccc;
+      }
+    }
+  }
+}
