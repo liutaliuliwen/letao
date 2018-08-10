@@ -79,6 +79,7 @@ a:active {
   padding-left: 180px;
   font-size: 16px;
   padding-top: 14px;
+  z-index: 10;
 }
 .lt-main .lt-top-bar.animate {
   padding-left: 0px;
@@ -101,6 +102,11 @@ a:active {
 }
 .lt-main .lt-content .container-fluid {
   margin-top: 15px;
+}
+.lt-main .lt-content .container-fluid .table thead > tr > th,
+.lt-main .lt-content .container-fluid .table tbody > tr > td {
+  vertical-align: middle;
+  text-align: center;
 }
 .lt-main .lt-content .container-fluid .manage a {
   color: #337ab7;

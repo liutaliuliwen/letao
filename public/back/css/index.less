@@ -87,6 +87,7 @@ a:link,a:visited,a:hover,a:active{
 .lt-main {
   .lt-top-bar {
     transition: 2s padding-left;
+
     &.animate{
       padding-left: 0px;
     }
@@ -98,8 +99,9 @@ a:link,a:visited,a:hover,a:active{
     padding-left: 180px;
     font-size: 16px;
     padding-top: 14px;
+    z-index: 10;
 
-    .menu {
+   .menu {
       color: #fff;
       padding-left: 15px;
     }
@@ -122,6 +124,13 @@ a:link,a:visited,a:hover,a:active{
 
     .container-fluid {
       margin-top: 15px;
+
+      .table{
+        thead>tr>th,tbody>tr>td{
+          vertical-align: middle;
+          text-align: center;
+        }
+      }
 
       .manage a{
         color: #337ab7 ;
